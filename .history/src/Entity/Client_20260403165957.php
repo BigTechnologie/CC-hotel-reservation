@@ -52,7 +52,7 @@ class Client implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[Assert\NotBlank]
     #[Assert\Length(max: 20)]
-    #[ORM\Column(length: 20, unique: true)]
+    #[ORM\Column(length: 20, )]
     private ?string $telephone = null;
 
     #[ORM\Column]
